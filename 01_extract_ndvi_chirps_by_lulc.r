@@ -5,6 +5,26 @@ date: "2025-01-28"
 output: html_document
 ---
 
+# ============================================================
+# Script 1: Extract class-level NDVI and CHIRPS time series
+# Purpose:  Compute per-date mean NDVI and rainfall per LULC class
+# Inputs:   rasters/NDVI.tif (multi-layer)
+#           rasters/CHIRPS_pentad.tif (multi-layer)
+#           rasters/LULC_MCC.tif
+#           Rasters/detailled_LULC_Kariba_area.tif
+#           Shapefile/MCC.shp
+#           Shapefile/Zone_etude_Kariba_lake.shp
+# Outputs:  results/timeseries/ndvi_mcc_means.csv
+#           results/timeseries/chirps_mcc_means.csv
+#           results/timeseries/ndvi_kariba_means.csv
+#           results/timeseries/chirps_kariba_means.csv
+#           (+ equivalent .rds files)
+# Notes:    CSV schema: date (YYYY-MM-DD) + one column per LULC class
+#           NDVI is exported as scaled integer (approx -2000..10000)
+#           CHIRPS is exported as mean rainfall per pentad (raster units)
+# ============================================================
+
+
 ## Purpose
 
 This notebook:
