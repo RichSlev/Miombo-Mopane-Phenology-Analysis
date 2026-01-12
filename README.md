@@ -104,3 +104,10 @@ For exploratory and method development phases, it is recommended to:
 - validate phenological patterns at local scale before extending to the full Kariba region  
 
 This approach limits confounding effects of coarse spatial resolution and heterogeneous land-use mosaics during early analysis stages.
+
+Group project contributors:
+
+Richard Slevin
+Eamon O'Cathain
+Pablo Canton
+Julia Lerno Causse
